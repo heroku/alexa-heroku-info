@@ -1,0 +1,7 @@
+intents:
+  - Echo:
+      message: AMAZON.LITERAL
+
+utterances:
+  Echo:
+    - echo { something | message }

@@ -1,0 +1,4 @@
+cryptography # necessary to deploy to heroku
+flask
+gunicorn
+pylexa==1.0.0

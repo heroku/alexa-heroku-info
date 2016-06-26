@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "Echo",
+      "slots": [
+        {
+          "name": "message",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    }
+  ]
+}
