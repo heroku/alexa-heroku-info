@@ -1,7 +1,10 @@
 intents:
-  - Echo:
-      message: AMAZON.LITERAL
+  - HerokuStatus
+  - HerokuInfo
 
 utterances:
-  Echo:
-    - echo { something | message }
+  HerokuStatus:
+    - what is the status
+    - what is the status of the platform
+  HerokuInfo:
+    - who is the best Customer Solutions Architect

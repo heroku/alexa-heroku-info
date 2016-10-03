@@ -1,7 +1,16 @@
 {
   "intents": [
     {
-      "intent": "Echo",
+      "intent": "HerokuStatus",
+      "slots": [
+        {
+          "name": "message",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "HerokuInfo",
       "slots": [
         {
           "name": "message",
