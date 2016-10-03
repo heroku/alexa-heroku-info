@@ -27,15 +27,15 @@ def handle_status_intent(request):
 
     response = json.loads(buffer.getvalue())
 
+    message = "Production and Development are green"
+
     prod_status = response["status"]["Production"]
     dev_status = response["status"]["Development"]
 
     if prod_status != 'green' or dev_status != 'green':
         message = "Production is {0} and Development is {1}".format(dev_status, prod_status)
-    else:
-        message = "Production and Development are green"
 
-    return PlainTextSpeech(message, 'Nothing to echo')
+    return PlainTextSpeech(message)
 
 
 @handle_intent('HerokuInfo')
