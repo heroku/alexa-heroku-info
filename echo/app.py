@@ -27,16 +27,16 @@ def handle_status_intent(request):
 
     response = json.loads(buffer.getvalue())
 
-    message = "Production and Development are green"
+    message = "Production and Development are both green. All systems are nominal."
 
     prod_status = response["status"]["Production"]
     dev_status = response["status"]["Development"]
 
     if prod_status != 'green' or dev_status != 'green':
-        message = "Production is {0} and Development is {1}".format(dev_status, prod_status)
+        message = "Production is {0} and Development is {1}.".format(dev_status, prod_status)
     
     if response['issues']:
-        message += ". The following issues are open: " + " ".join(response['issues'])
+        message += " The following issues are open: " + " ".join(response['issues'])
 
     return PlainTextSpeech(message)
 
