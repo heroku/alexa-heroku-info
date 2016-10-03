@@ -1,22 +1,10 @@
 {
   "intents": [
     {
-      "intent": "HerokuStatus",
-      "slots": [
-        {
-          "name": "message",
-          "type": "AMAZON.LITERAL"
-        }
-      ]
+      "intent": "HerokuStatus"
     },
     {
-      "intent": "HerokuInfo",
-      "slots": [
-        {
-          "name": "message",
-          "type": "AMAZON.LITERAL"
-        }
-      ]
+      "intent": "HerokuInfo"
     }
   ]
 }
