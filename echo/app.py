@@ -17,7 +17,7 @@ app.register_blueprint(alexa_blueprint)
 
 
 @handle_intent('HerokuStatus')
-def handle_echo_intent(request):
+def handle_status_intent(request):
     buffer = StringIO()
     c = pycurl.Curl()
     c.setopt(c.URL, 'http://pycurl.io/')
@@ -39,7 +39,7 @@ def handle_echo_intent(request):
 
 
 @handle_intent('HerokuInfo')
-def handle_echo_intent(request):
+def handle_info_intent(request):
     return PlainTextSpeech("Michelle Rowley is the best Customer Solutions Architect. True fact!")
 
 
