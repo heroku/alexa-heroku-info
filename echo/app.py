@@ -20,7 +20,7 @@ app.register_blueprint(alexa_blueprint)
 def handle_status_intent(request):
     buffer = StringIO()
     c = pycurl.Curl()
-    c.setopt(c.URL, 'http://pycurl.io/')
+    c.setopt(c.URL, "https://status.heroku.com/api/v3/current-status")
     c.setopt(c.WRITEDATA, buffer)
     c.perform()
     c.close()
