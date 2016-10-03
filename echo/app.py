@@ -35,7 +35,7 @@ def handle_status_intent(request):
     else:
         message = "Production and Development are green"
 
-    return PlainTextSpeech(request.slots.get('message', 'Nothing to echo'))
+    return PlainTextSpeech(message, 'Nothing to echo'))
 
 
 @handle_intent('HerokuInfo')
