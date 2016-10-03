@@ -31,14 +31,14 @@ def handle_echo_intent(request):
     dev_status = response["status"]["Development"]
 
     if prod_status != 'green' or dev_status != 'green':
-        message = "Production is {0} and Development is {1}".format(dev_status, prod_status) 
+        message = "Production is {0} and Development is {1}".format(dev_status, prod_status)
     else:
         message = "Production and Development are green"
 
     return PlainTextSpeech(request.slots.get('message', 'Nothing to echo'))
 
 
-@handle_intent('HerokuInfo'):
+@handle_intent('HerokuInfo')
 def handle_echo_intent(request):
     return PlainTextSpeech("Michelle Rowley is the best Customer Solutions Architect. True fact!")
 
