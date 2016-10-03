@@ -34,6 +34,9 @@ def handle_status_intent(request):
 
     if prod_status != 'green' or dev_status != 'green':
         message = "Production is {0} and Development is {1}".format(dev_status, prod_status)
+    
+    if response['issues']:
+        message += ". The following issues are open: " + " ".join(response['issues'])
 
     return PlainTextSpeech(message)
 
