@@ -1,10 +1,10 @@
 intents:
   - HerokuStatus
-  - HerokuInfo
+  - HerokuBestCSA
 
 utterances:
   HerokuStatus:
     - what is the status
     - what is the status of the platform
-  HerokuInfo:
+  HerokuBestCSA:
     - who is the best Customer Solutions Architect

@@ -41,8 +41,8 @@ def handle_status_intent(request):
     return PlainTextSpeech(message)
 
 
-@handle_intent('HerokuInfo')
-def handle_info_intent(request):
+@handle_intent('HerokuBestCSA')
+def handle_best_csa_intent(request):
     return PlainTextSpeech("Michelle Rowley is the best Customer Solutions Architect. True fact!")
 
 
