@@ -43,7 +43,7 @@ def handle_status_intent(request):
 
 @handle_intent('HerokuBestCSA')
 def handle_best_csa_intent(request):
-    return PlainTextSpeech("Michelle Rowley is the best Customer Solutions Architect. True fact!")
+    return PlainTextSpeech("Michelle Rawley is the best Customer Solutions Architect. True fact!")
 
 
 if __name__ == '__main__':
