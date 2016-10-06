@@ -12,8 +12,7 @@ from pylexa.response import PlainTextSpeech
 
 
 BASIC_RESPONSES = {
-    "Dyno": """
-    A dyno is a lightweight Linux container that runs a single user-specified command. Apps are run inside dynos on the Heroku Platform.""",
+    "Dyno": """A dyno is a lightweight Linux container that runs a single user-specified command. Apps are run inside dynos on the Heroku Platform.""",
     "Addon": "Add-ons are great",
     "Connect": "Connect is great",
     "Private Spaces": "Spaces are great",
@@ -75,6 +74,9 @@ def handle_status_intent(request):
 @handle_intent('HerokuInfo')
 def handle_info_intent(request):
     concept = request.slots.get('Concept', 'Heroku').lower()
+
+    print(concept)
+
     try:
         response = CONCEPT_RESPONSES[concept]
     except Exception:
