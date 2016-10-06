@@ -29,7 +29,7 @@ CONCEPT_RESPONSES = {
     "Addons": BASIC_RESPONSES["Addon"],
     "Add-ons": BASIC_RESPONSES["Addon"],
     "Connect": BASIC_RESPONSES["Connect"],
-    "Heroku Connect", BASIC_RESPONSES["Connect"],
+    "Heroku Connect": BASIC_RESPONSES["Connect"],
     "Private Space": BASIC_RESPONSES["Private Spaces"],
     "Private Spaces": BASIC_RESPONSES["Private Spaces"],
     "App": BASIC_RESPONSES["Apps"],
