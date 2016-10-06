@@ -29,7 +29,7 @@ def handle_status_intent(request):
 
     response = json.loads(buffer.getvalue())
 
-    message = "Production and Development are both green. All systems are nominal."
+    message = "Production and Development are green. All systems are nominal."
 
     prod_status = response["status"]["Production"]
     dev_status = response["status"]["Development"]
