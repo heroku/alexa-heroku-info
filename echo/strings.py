@@ -10,6 +10,7 @@ BASIC_RESPONSES = {
     "Unsure": "You can ask Heroku about dynos, apps, add-ons, slugs, pipelines, private spaces or Herokuconnect.",
     "Michelle": "Michelle Rawley is a Customer Solutions Architect at Heroku. She enjoys reading, yoga, and snowboarding. Her favorite color is blue.",
     "Twitter": "Allow me to refer you to our Public Relations department...",
+    "AppCon": "I love all the information about DevOps, but that Salesforce booth was the best exhibit of all!",
 }
 
 CONCEPT_RESPONSES = {
@@ -35,4 +36,5 @@ CONCEPT_RESPONSES = {
     "unsure": BASIC_RESPONSES["Unsure"],
     "michelle": BASIC_RESPONSES["Michelle"],
     "twitter": BASIC_RESPONSES["Twitter"],
+    "appcon": BASIC_RESPONSES["AppCon"],
 }

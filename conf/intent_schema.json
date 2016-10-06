@@ -5,6 +5,15 @@
     },
     {
       "intent": "HerokuBestCSA"
-    }
+    },
+    {
+      "intent": "HerokuInfo",
+      "slots": [
+        {
+          "name": "Concept",
+          "type": "LIST_OF_CONCEPTS"
+        }
+   		]
+	  }
   ]
 }
