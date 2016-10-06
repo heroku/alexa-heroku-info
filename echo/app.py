@@ -19,7 +19,9 @@ BASIC_RESPONSES = {
     "Apps": "An app is a collection of source code along some dependency description that tells Heroku how to build and run the application.",
     "Pipelines": "A pipeline is a group of Heroku apps that share the same codebase. Apps in a pipeline are grouped into stages that represent different deployment steps in a continuous delivery workflow. Michelle will show you a Pipelines demo if you ask her.",
     "Heroku": "Heroku lets you deploy, run, and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP.",
-    "Unsure": "You can ask me about dynos, add-ons, apps, pipelines, private spaces or Herokuconnect."
+    "Unsure": "You can ask me about dynos, add-ons, apps, pipelines, private spaces or Herokuconnect.",
+    "Michelle": "Michelle Rawley is a Customer Solutions Architect at Heroku. She enjoys reading, yoga, and snowboarding. Her favorite color is blue.",
+    "Twitter": "Allow me to refer you to our Public Relations department...",
 }
 
 CONCEPT_RESPONSES = {
@@ -41,7 +43,8 @@ CONCEPT_RESPONSES = {
     "pipelines": BASIC_RESPONSES["Pipelines"],
     "heroku": BASIC_RESPONSES["Heroku"],
     "unsure": BASIC_RESPONSES["Unsure"],
-    "michelle": "Michelle Rawley is a Customer Solutions Architect at Heroku.",
+    "michelle": BASIC_RESPONSES["Michelle"],
+    "twitter": BASIC_RESPONSES["Twitter"],
 }
 
 app = Flask(__name__)
