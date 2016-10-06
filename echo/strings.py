@@ -36,5 +36,5 @@ CONCEPT_RESPONSES = {
     "unsure": BASIC_RESPONSES["Unsure"],
     "michelle": BASIC_RESPONSES["Michelle"],
     "twitter": BASIC_RESPONSES["Twitter"],
-    "appcon": BASIC_RESPONSES["AppCon"],
+    "app con": BASIC_RESPONSES["AppCon"],
 }
