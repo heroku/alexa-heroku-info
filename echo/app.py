@@ -20,7 +20,7 @@ BASIC_RESPONSES = {
     "Apps": "An app is a collection of source code along some dependency description that tells Heroku how to build and run the application.",
     "Pipelines": "A pipeline is a group of Heroku apps that share the same codebase. Apps in a pipeline are grouped into stages that represent different deployment steps in a continuous delivery workflow. Michelle will show you a Pipelines demo if you ask her.",
     "Heroku": "Heroku lets you deploy, run, and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP.",
-    "Unsure": "You can ask Heroku about apps, dyenos, add-ons, slugs, pipelines, private spaces or Hehrokuconnect.",
+    "Unsure": "You can ask Heroku about apps, dynos, add-ons, slugs, pipelines, private spaces or Herokuconnect.",
     "Michelle": "Michelle Rawley is a Customer Solutions Architect at Heroku. She enjoys reading, yoga, and snowboarding. Her favorite color is blue.",
     "Twitter": "Allow me to refer you to our Public Relations department...",
 }
