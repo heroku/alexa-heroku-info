@@ -12,7 +12,7 @@ from pylexa.response import PlainTextSpeech
 
 
 BASIC_RESPONSES = {
-    "Dyno": "Dynos are great",
+    "Dyno": "A dyno is a lightweight Linux container that runs a single user-specified command. A dyno can run any command available in its default environment -- which is what we supply in the Cedar stack -- or in your app’s slug -- which is a compressed and pre-packaged copy of your application and its dependencies.",
     "Addon": "Add-ons are great",
     "Connect": "Connect is great",
     "Private Spaces": "Spaces are great",
@@ -22,21 +22,21 @@ BASIC_RESPONSES = {
 }
 
 CONCEPT_RESPONSES = {
-    "Dyno": BASIC_RESPONSES["Dyno"],
-    "Dynos": BASIC_RESPONSES["Dyno"],
-    "Addon": BASIC_RESPONSES["Addon"],
-    "Add-on": BASIC_RESPONSES["Addon"],
-    "Addons": BASIC_RESPONSES["Addon"],
-    "Add-ons": BASIC_RESPONSES["Addon"],
-    "Connect": BASIC_RESPONSES["Connect"],
-    "Heroku Connect": BASIC_RESPONSES["Connect"],
-    "Private Space": BASIC_RESPONSES["Private Spaces"],
-    "Private Spaces": BASIC_RESPONSES["Private Spaces"],
-    "App": BASIC_RESPONSES["Apps"],
-    "Apps": BASIC_RESPONSES["Apps"],
-    "Pipeline": BASIC_RESPONSES["Pipelines"],
-    "Pipelines": BASIC_RESPONSES["Pipelines"],
-    "Heroku": BASIC_RESPONSES["Heroku"],
+    "dyno": BASIC_RESPONSES["Dyno"],
+    "dynos": BASIC_RESPONSES["Dyno"],
+    "addon": BASIC_RESPONSES["Addon"],
+    "add-on": BASIC_RESPONSES["Addon"],
+    "addons": BASIC_RESPONSES["Addon"],
+    "add-ons": BASIC_RESPONSES["Addon"],
+    "aonnect": BASIC_RESPONSES["Connect"],
+    "heroku connect": BASIC_RESPONSES["Connect"],
+    "private space": BASIC_RESPONSES["Private Spaces"],
+    "private spaces": BASIC_RESPONSES["Private Spaces"],
+    "app": BASIC_RESPONSES["Apps"],
+    "apps": BASIC_RESPONSES["Apps"],
+    "pipeline": BASIC_RESPONSES["Pipelines"],
+    "pipelines": BASIC_RESPONSES["Pipelines"],
+    "heroku": BASIC_RESPONSES["Heroku"],
 }
 
 app = Flask(__name__)
@@ -72,8 +72,12 @@ def handle_status_intent(request):
 @handle_intent('HerokuInfo')
 def handle_info_intent(request):
     concept = request.slots.get('Concept', 'Heroku')
+    try:
+        response = CONCEPT_RESPONSES[concept]
+    except Exception:
+        response = CONCEPT_RESPONSES["heroku"]
 
-    return PlainTextSpeech(CONCEPT_RESPONSES[concept])
+    return PlainTextSpeech(response)
 
 
 @handle_intent('HerokuBestCSA')
