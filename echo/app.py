@@ -14,7 +14,7 @@ from pylexa.response import PlainTextSpeech
 BASIC_RESPONSES = {
     "Dyno": "A dyno is a lightweight Linux container that runs a single user-specified command. Apps are run inside dynos on the Heroku Platform.",
     "Addon": "Add-ons are tools and services for developing, extending, and operating your Heroku app. Some add-ons are built and maintained by Heroku while others are offered by third party vendors.",
-    "Connect": "Heroku Connect is an add-on that synchronizes data between your Salesforce organization and a Heroku Postgres database. Using Heroku Connect with Heroku Postgres, you can build applications that interact with your Salesforce data."
+    "Connect": "Heroku Connect is an add-on that synchronizes data between your Salesforce organization and a Heroku Postgres database. Using Heroku Connect with Heroku Postgres, you can build applications that interact with your Salesforce data.",
     "Private Spaces": "Private Spaces are dedicated environments for running dynos and certain types of add-ons enclosed within an isolated network. Access to apps in a Private Space can be controlled at the network level.",
     "Apps": "An app is a collection of source code and some dependency description that instructs Heroku as to which additional dependencies are needed in order to build and run the application.",
     "Pipelines": "A pipeline is a group of Heroku apps that share the same codebase. Apps in a pipeline are grouped into stages representing different deployment steps in a continuous delivery workflow.",
