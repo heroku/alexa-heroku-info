@@ -41,6 +41,7 @@ CONCEPT_RESPONSES = {
     "pipelines": BASIC_RESPONSES["Pipelines"],
     "heroku": BASIC_RESPONSES["Heroku"],
     "unsure": BASIC_RESPONSES["Unsure"],
+    "michelle": "Michelle Rawley is a Customer Solutions Architect at Heroku.",
 }
 
 app = Flask(__name__)
