@@ -11,6 +11,11 @@ from pylexa.intent import handle_intent
 from pylexa.response import PlainTextSpeech
 
 
+CONCEPT_RESPONSES = {
+    "Dyno": "",
+    "Add-on": "",
+}
+
 app = Flask(__name__)
 app.config['app_id'] = os.getenv('ALEXA_APP_ID')
 app.register_blueprint(alexa_blueprint)
@@ -39,6 +44,13 @@ def handle_status_intent(request):
         message += " The following issues are open: " + " ".join(response['issues'])
 
     return PlainTextSpeech(message)
+
+
+@handle_intent('HerokuInfo')
+def handle_info_intent(request):
+    concept = request.slots.get('Concept', '')
+
+    return PlainTextSpeech(concept)
 
 
 @handle_intent('HerokuBestCSA')

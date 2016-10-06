@@ -1,4 +1,10 @@
 HerokuStatus what is the status of the platform
 HerokuStatus what is the status of Heroku
-HerokuInfo who is the best CSA at Heroku
-HerokuInfo who is the best customer solutions architect
+HerokuBestCSA who is the best CSA at Heroku
+HerokuBestCSA who is the best customer solutions architect
+HerokuInfo what is a dyno
+HerokuInfo what is an add-on
+HerokuInfo what is a private space
+HerokuInfo what is a pipeline
+HerokuInfo what is an app
+HerokuInfo what is connect

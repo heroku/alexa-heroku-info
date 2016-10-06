@@ -1,6 +1,8 @@
 intents:
   - HerokuStatus
   - HerokuBestCSA
+  - HerokuInfo:
+      Concept: LIST_OF_CONCEPTS
 
 utterances:
   HerokuStatus:
@@ -8,3 +10,12 @@ utterances:
     - what is the status of the platform
   HerokuBestCSA:
     - who is the best Customer Solutions Architect
+
+slots:
+    LIST_OF_CONCEPTS:
+        - Dyno
+        - Add-on
+        - Connect
+        - Private Space
+        - App
+        - Pipeline
