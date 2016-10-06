@@ -12,7 +12,13 @@ from pylexa.response import PlainTextSpeech
 
 
 BASIC_RESPONSES = {
-    "Dyno": "A dyno is a lightweight Linux container that runs a single user-specified command. A dyno can run any command available in its default environment -- which is what we supply in the Cedar stack -- or in your app’s slug -- which is a compressed and pre-packaged copy of your application and its dependencies.",
+    "Dyno": """
+    A dyno is a lightweight Linux container that runs a single user-specified command.
+    A dyno can run any command available in its default environment --
+    which is what we supply in the Cedar stack --
+    or in your app’s slug -- which is a compressed and pre-packaged copy of your
+    application and its dependencies.
+    """,
     "Addon": "Add-ons are great",
     "Connect": "Connect is great",
     "Private Spaces": "Spaces are great",
@@ -71,7 +77,7 @@ def handle_status_intent(request):
 
 @handle_intent('HerokuInfo')
 def handle_info_intent(request):
-    concept = request.slots.get('Concept', 'Heroku')
+    concept = request.slots.get('Concept', 'Heroku').lower()
     try:
         response = CONCEPT_RESPONSES[concept]
     except Exception:
