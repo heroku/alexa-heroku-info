@@ -80,7 +80,7 @@ def handle_info_intent(request):
     try:
         response = CONCEPT_RESPONSES[concept]
     except Exception:
-        response = CONCEPT_RESPONSES["Unsure"]
+        response = CONCEPT_RESPONSES["unsure"]
 
     return PlainTextSpeech(response)
 
