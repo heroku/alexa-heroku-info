@@ -78,6 +78,8 @@ def handle_status_intent(request):
 def handle_info_intent(request):
     concept = request.slots.get('Concept', 'Unsure').lower()
 
+    print(concept)
+
     try:
         response = CONCEPT_RESPONSES[concept]
     except Exception:
