@@ -17,8 +17,7 @@ BASIC_RESPONSES = {
     A dyno can run any command available in its default environment --
     which is what we supply in the Cedar stack --
     or in your app’s slug -- which is a compressed and pre-packaged copy of your
-    application and its dependencies.
-    """,
+    application and its dependencies.""",
     "Addon": "Add-ons are great",
     "Connect": "Connect is great",
     "Private Spaces": "Spaces are great",
