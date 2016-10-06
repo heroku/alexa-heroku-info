@@ -13,6 +13,8 @@ utterances:
 
 slots:
     LIST_OF_CONCEPTS:
+      - Dino
+      - Dinos
       - Dyno
       - Dynos
       - Add-on
