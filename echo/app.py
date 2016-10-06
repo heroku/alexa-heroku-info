@@ -12,7 +12,9 @@ from pylexa.response import PlainTextSpeech
 
 
 BASIC_RESPONSES = {
-    "Dyno": "Dynos are great",
+    "Dyno": """
+    A dyno is a lightweight Linux container that runs a single user-specified command. A dyno can run any command available in its default environment (what we supply in the Cedar stack) or in your app’s slug (a compressed and pre-packaged copy of your application and its dependencies).
+    """,
     "Addon": "Add-ons are great",
     "Connect": "Connect is great",
     "Private Spaces": "Spaces are great",
@@ -24,6 +26,8 @@ BASIC_RESPONSES = {
 CONCEPT_RESPONSES = {
     "dyno": BASIC_RESPONSES["Dyno"],
     "dynos": BASIC_RESPONSES["Dyno"],
+    "dino": BASIC_RESPONSES["Dyno"],
+    "dinos": BASIC_RESPONSES["Dyno"],
     "addon": BASIC_RESPONSES["Addon"],
     "add-on": BASIC_RESPONSES["Addon"],
     "addons": BASIC_RESPONSES["Addon"],
