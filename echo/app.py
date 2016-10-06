@@ -73,7 +73,7 @@ def handle_status_intent(request):
 def handle_info_intent(request):
     concept = request.slots.get('Concept', 'Heroku')
 
-    return PlainTextSpeech(concept)
+    return PlainTextSpeech(CONCEPT_RESPONSES[concept])
 
 
 @handle_intent('HerokuBestCSA')
