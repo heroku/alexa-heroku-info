@@ -13,9 +13,17 @@ utterances:
 
 slots:
     LIST_OF_CONCEPTS:
-        - Dyno
-        - Add-on
-        - Connect
-        - Private Space
-        - App
-        - Pipeline
+      - Dyno
+      - Dynos
+      - Add-on
+      - Addon
+      - Add-ons
+      - Addons
+      - Heroku Connect
+      - Connect
+      - Private Space
+      - Private Spaces
+      - App
+      - Apps
+      - Pipeline
+      - Pipelines
