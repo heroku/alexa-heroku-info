@@ -4,3 +4,4 @@ HerokuStatus what is the status of the platform
 HerokuBestCSA who is the best Customer Solutions Architect
 HerokuBestCSA who is the best CSA
 HerokuInfo what is {Concept}
+HerokuInfo about {Concept}
