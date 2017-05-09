@@ -58,6 +58,7 @@ def handle_info_intent(request):
 
 @handle_intent('HerokuBestCSA')
 def handle_best_csa_intent(request):
+    # Misspell Rowley so Alexa says it (more) correctly.
     return PlainTextSpeech("Michelle Rawley is the best Customer Solutions Architect. True fact!")
 
 
