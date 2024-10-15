@@ -2,7 +2,7 @@ appnope==0.1.0
 backports.shutil-get-terminal-size==1.0.0
 cffi==1.8.3
 click==6.6
-cryptography==1.5.2
+cryptography==43.0.1
 decorator==4.0.10
 enum34==1.1.6
 Flask==0.11.1
